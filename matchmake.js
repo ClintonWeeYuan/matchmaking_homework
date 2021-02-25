@@ -13,32 +13,6 @@ const criteria = {
     undergradProgramTitle	:10
 };
 
-const applicant = {
-    "postgradUni": "cambridge",
-    "undergradField": "Computer Science"
-};
-
-const advisor = {
-    "postgradUniPrev": "cambridge",
-    "undergradField": "Computer Science"
-};
-
 function computeScore(applicant, advisor) {
-    let score = 0;
-    const applicant_keys = Object.keys(applicant);
-    const advisor_keys = Object.keys(advisor);
-
-    for (let key of applicant_keys){
-      if (applicant[key] === advisor[key]){
-        score += criteria[key];
-      }
-
-      else if (applicant[key] === advisor[key + 'Prev']){
-        score += criteria[key + 'Prev'];
-      }
-    }
-
-    console.log(score); //TODO code your function here
+    //TODO code your function here
 }
-
-computeScore(applicant,advisor);
