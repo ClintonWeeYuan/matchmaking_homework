@@ -26,7 +26,7 @@ const advisor = {
 function computeScore(applicant, advisor) {
     let score = 0;
     const applicant_keys = Object.keys(applicant);
-
+    const advisor_keys = Object.keys(advisor);
 
     for (let key of applicant_keys){
       if (applicant[key] === advisor[key]){
