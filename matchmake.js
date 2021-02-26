@@ -31,6 +31,9 @@ function computeScore(applicant, advisor) {
     for (let key of applicant_keys){
       if (applicant[key] === advisor[key]){
         score += criteria[key];
+
+        if(applicant[key] === advisor[key + 'Prev'])
+        score += criteria[key + 'Prev'];
       }
 
       else if (applicant[key] === advisor[key + 'Prev']){
