@@ -24,6 +24,7 @@ const advisor = {
 };
 
 function computeScore(applicant, advisor) {
+
     let score = 0;
     const applicant_keys = Object.keys(applicant);
 
@@ -44,3 +45,4 @@ function computeScore(applicant, advisor) {
 }
 
 computeScore(applicant,advisor);
+
