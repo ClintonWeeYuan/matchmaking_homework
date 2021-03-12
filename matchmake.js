@@ -23,7 +23,7 @@ const advisor = {
     "undergradField": "Computer Science"
 };
 
-function computeScore(applicant, advisor) {
+module.exports = function(applicant, advisor) {
     let score = 0;
     const applicant_keys = Object.keys(applicant);
 
@@ -38,9 +38,13 @@ function computeScore(applicant, advisor) {
       else if (applicant[key] === advisor[key + 'Prev']){
         score += criteria[key + 'Prev'];
       }
+
+      else{
+        continue;
+      }
     }
 
-    console.log(score); //TODO code your function here
+    return score; //TODO code your function here
 }
 
-computeScore(applicant,advisor);
+

@@ -1,10 +1,13 @@
 {
   "name": "intograd-practice",
   "version": "1.0.0",
-  "description": "Inside `matchmake.js`, there is a matchmake scoring criterias and their respective weighting. You will be writing a function to calculate the compatibility scores between applicants and advisors",
+  "description": "Test Cases",
   "main": "matchmake.js",
+  "directories": {
+    "test": "test"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -16,10 +19,8 @@
     "url": "https://github.com/ClintonWeeYuan/matchmaking_homework/issues"
   },
   "homepage": "https://github.com/ClintonWeeYuan/matchmaking_homework#readme",
-  "dependencies": {
-    "chai": "^4.3.3",
-    "es6": "^0.0.7",
-    "esm": "^3.2.25",
-    "mocha": "^8.3.1"
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "mocha": "^8.3.2"
   }
 }
